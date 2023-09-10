@@ -3,7 +3,7 @@ from tkinter import StringVar
 from tkinter import messagebox
 
 root = tk.Tk()
-root.geometry('500x550')  # Slightly increased height to accommodate the note
+root.geometry('500x550')  
 
 questions = [
     "What is the capital of Japan?",
@@ -76,7 +76,7 @@ def restartQuiz():
     index = 0
     correct = 0
     question_label['text'] = ""
-    question_label['bg'] = 'grey'  # Reset background color
+    question_label['bg'] = 'grey'  # to Reset background color
     score_label.config(text="Score: 0")
     button_next.config(text="Next", command=displayNextQuestion)
     displayNextQuestion()
