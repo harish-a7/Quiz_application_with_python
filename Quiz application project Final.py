@@ -114,6 +114,9 @@ def displayNextQuestion():
 button_next = tk.Button(root, text='Next', bg='Orange', font=('Verdana', 20), command=displayNextQuestion)
 button_next.pack(pady=10)
 
+watermark_label = tk.Label(root, text="harish-a7", font=('Verdana', 12), fg="gray")
+watermark_label.place(x=10, y=520)
+
 displayNextQuestion()
 
 root.mainloop()
